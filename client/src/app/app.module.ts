@@ -4,15 +4,30 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
+import { MainComponent } from './main/main.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot([
+      {
+        path: 'main',
+        component: MainComponent
+      },
+      {
+        path: 'list',
+        component: ListComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
