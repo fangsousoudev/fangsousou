@@ -4,9 +4,22 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { ListComponent } from './list/list.component';
+
+import { TestService } from './test.service';
+
+const routes: Routes = [
+      {
+        path: 'main',
+        component: MainComponent
+      },
+      {
+        path: 'list',
+        component: ListComponent
+      }
+    ];
 
 @NgModule({
   declarations: [
@@ -18,18 +31,11 @@ import { ListComponent } from './list/list.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-      {
-        path: 'main',
-        component: MainComponent
-      },
-      {
-        path: 'list',
-        component: ListComponent
-      }
-    ])
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+    TestService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
