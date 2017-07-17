@@ -1,0 +1,51 @@
+<div ng-include="'tpl/include/header.html'"></div>
+<!--<div class="centerStart"-->
+     <!--ng-click="jump('/fssDetail')">-->
+<!--</div>-->
+
+<div class="list-group">
+  <div class="list-group-item">
+      <div ng-include="'tpl/include/select.html'"></div>
+  </div>
+    <a href="#/fssDetail/{{dish.id}}"
+       ng-repeat="dish in dishList"
+       class="list-group-item">
+        <div clarss="media">
+            <div class="media-left media-middle">
+                <img ng-src="{{dish.url}}" alt=""/>
+            </div>
+            <div class="media-body" >
+                <div class="pr">
+                    <div>{{dish.price}}</div>
+                    <div class="prs">{{dish.priceS}}</div>
+                </div>
+                 <div>
+                     <h2 style="color:#000">{{dish.name}}</h2>
+                     <div class="Sale">{{dish.sale}}</div>
+                 </div>
+                <div class="xiaoB">{{dish.matreial}}</div>
+                <div class="daB">{{dish.detail}}</div>
+            </div>
+        </div>
+    </a>
+</div>
+<nav>
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<div ng-include="'tpl/include/footer.html'"></div>

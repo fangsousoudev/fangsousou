@@ -1,0 +1,28 @@
+
+    <div class="panel-body">
+      <div class="kk"><h5>房屋类型：</h5></div>
+    <div  ng-controller="choose1">
+        <select class="form-control">
+            <option ng-repeat="x in names">{{x}}</option>
+        </select>
+    </div>
+    <div class="kk"><h5>装修：</h5></div>
+    <div id='chose' ng-controller="choose2">
+        <select class="form-control">
+            <option ng-repeat="x in mm">{{x}}</option>
+        </select>
+    </div>
+    <div class="kk"><h5>建筑年代：</h5></div>
+    <div  ng-controller="choose3">
+        <select class="form-control">
+            <option ng-repeat="x in gg">{{x}}</option>
+        </select>
+    </div>
+
+    </div>
+    <!--<div class="panel-body">-->
+        <!--<div ng-controller="choose">-->
+            <!--<select ng-options="x for x in options">-->
+            <!--</select>-->
+        <!--</div>-->
+        <!--</div>-->

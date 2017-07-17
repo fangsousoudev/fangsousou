@@ -1,0 +1,150 @@
+<div ng-include="'tpl/include/header.html'"></div>
+<!-- <div class="panel panel-default">
+    <div ng-include="'tpl/include/select.html'"></div>
+</div> -->
+<div class="list-group">
+      <div class="list-group-item">
+          <div clarss="media">
+              <div class="media-left media-middle">
+                             <!-- <img ng-src="{{dish.url}}" alt=""/> -->
+                      <div ng-controller="CarouselDemoCtrl">
+                         <div style="height: 305px">
+                             <carousel interval="myInterval" no-wrap="noWrapSlides">
+                                 <slide ng-repeat="slide in dish" active="slide.active">
+                                     <img ng-src="{{slide.url01}}" style="margin:auto;">
+                                     <div class="carousel-caption">
+                                         <h4>Nsfocus {{$index}}</h4>
+                                         <p>{{slide.text}}</p>
+                                     </div>
+                                 </slide>
+                             </carousel>
+                         </div>
+                     </div>
+                     <!-- <div ng-controller="Pcontroller">
+	<carousel interval="myInterval">
+		<slide ng-repeat="slide in slides" active="slide.active">
+			<img ng-src="{{slide.image}}" style="margin:auto;">
+			<div class="carousel-caption">
+				<p>{{slide.text}}</p>
+			</div>
+		</slide>
+	</carousel>
+</div> -->
+              </div>
+              <div class="media-body">
+                <ul class="yangshiD">
+                  <li class="name1">{{dish.name}}</li>
+                    <li class="prc">{{dish.price}}</li>
+                  <li class="mat">{{dish.matreial}}</li>
+                  <li class="add">{{dish.address}}</li>
+                  <hr/>
+                  <li class="pho">{{dish.phone}}</li>
+                  <li class="tim">{{dish.time}}</li>
+                  <li class="qua">{{dish.quarlity}}</li>
+                </ul>
+              </div>
+            </div>
+      </div>
+</div>
+<div class="list-1">
+        <div class="btn-group btn-group-justified" role="group" >
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">{{dish.loupan}}</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">{{dish.huxing}}</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">{{dish.loupanPic}}</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">{{dish.comments}}</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">{{dish.comments}}</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">{{dish.peitao}}</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">{{dish.louDetail}}</button>
+          </div>
+        </div>
+</div>
+<div class="list-2">
+       <div class="panel panel-default" >
+           <div class="panel-heading">{{dish.loupan}}</div>
+           <div class="panel-body">
+             {{dish.loupanL}}
+           </div>
+        </div>
+</div>
+<div class="list-2">
+       <div class="panel panel-default" >
+           <div class="panel-heading">{{dish.loupan}}</div>
+        </div>
+</div>
+<div class="list-group">
+      <div class="list-group-item">
+          <div clarss="media">
+              <div class="media-left media-middle">
+                  <img  ng-src={{dish.urls}} alt=""/>
+              </div>
+              <div class="media-body">
+                <ul class="yangshiD">
+                  <li><B style="color:#000"><h3>{{dish.huxingS1}}<h3></B></li>
+                  <li>{{dish.huxingS2}}</li>
+                  <li>{{dish.quarlity}}</li>
+                </ul>
+              </div>
+            </div>
+      </div>
+      <div class="list-group-item">
+          <div clarss="media">
+              <div class="media-left media-middle">
+                  <img  ng-src={{dish.urlss}} alt=""/>
+              </div>
+              <div class="media-body">
+                <ul class="yangshiD">
+                  <li><B style="color:#000"><h3>{{dish.huxingS3}}<h3></B></li>
+                  <li>{{dish.huxingS2}}</li>
+                  <li>{{dish.quarlity}}</li>
+                </ul>
+              </div>
+            </div>
+      </div>
+</div>
+<div class="list-2">
+       <div class="panel panel-default" >
+           <div class="panel-heading">{{dish.comments}}</div>
+           <div class="panel-body">
+
+           </div>
+        </div>
+</div>
+<div class="list-2">
+       <div class="panel panel-default" >
+           <div class="panel-heading">{{dish.information}}</div>
+           <div class="panel-body">
+               <img class="img-responsive" ng-src={{dish.urlsss}} alt=""/>
+           </div>
+        </div>
+</div>
+<div class="list-2">
+       <div class="panel panel-default" >
+           <div class="panel-heading">
+             {{dish.louDetail}}
+           </div>
+           <div class="panel-body" id='last'>
+             <li>{{dish.louDetailSa}}</li>
+             <li>{{dish.louDetailSb}}</li>
+             <li>{{dish.louDetailSc}}</li>
+           </div>
+           <div class="panel-body" id='last1'>
+             <li>{{dish.louDetailSe}}</li>
+             <li>{{dish.louDetailSf}}</li>
+             <li>{{dish.louDetailSg}}</li>
+           </div>
+        </div>
+</div>
+<div ng-include="'tpl/include/footer.html'"></div>
