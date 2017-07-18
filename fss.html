@@ -11,7 +11,13 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
+  
     <title></title>
+    <script>
+  $(document).ready(function(){
+   $('#carousel-example-generic').carousel({interval:5000});//每隔5秒自动轮播
+  });
+ </script>
 </head>
 <body ng-controller="parentCtrl">
 <!--指定盛放代码片段的容器-->··

@@ -225,3 +225,7 @@ nav .pagination{
 .list-2{
   margin-top: 10px;
 }
+/*详细图片*/
+#carousel-example-generic{
+  width:400px;
+}
