@@ -40,22 +40,3 @@ Controllers.controller('DetailCtrl',['$scope','DishList','$routeParams',function
     }
   _init();
 }]);
-//轮播动画
-Controllers.controller('CarouselDemoCtrl',['$scope','DishList',function ($scope,DishList) {
-       $scope.myInterval = 2000;
-       $scope.noWrapSlides = false;
-       var _init = function (){
-         DishList.getInfo(function () {
-            //  $scope.dish = function (){
-            //    var newWidth = 600 + slides.length + 1;
-            //      // 添加轮播图源
-            //     slides.push({image: 'tpl/Img/11-1.jpg', text: '亲爱的你，情人节快乐' });
-            //     slides.push();
-            //     slides.push();
-            //     slides.push();
-            //     $scope.addDish();
-            //  }
-        })
-      };
-          _init();
-}]);
