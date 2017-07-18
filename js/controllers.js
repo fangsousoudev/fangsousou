@@ -37,6 +37,10 @@ Controllers.controller('DetailCtrl',['$scope','DishList','$routeParams',function
     DishList.getDetailInfo($routeParams.id, function (result) {
       $scope.dish = result;
         })
-    }
+    };
+    $(document).ready(function(){
+    $('#carousel-example-generic').carousel({interval:2000});
+    });
+
   _init();
 }]);

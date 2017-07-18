@@ -11,7 +11,7 @@
        ng-repeat="dish in dishList"
        class="list-group-item">
         <div clarss="media">
-            <div class="media-left media-middle">
+            <div class="media-left media-middle responsive" id="xypic">
                 <img ng-src="{{dish.url}}" alt=""/>
             </div>
             <div class="media-body" >
@@ -20,7 +20,7 @@
                     <div class="prs">{{dish.priceS}}</div>
                 </div>
                  <div>
-                     <h2 style="color:#000">{{dish.name}}</h2>
+                     <h2 style="color:#000" id='biaoti'>{{dish.name}}</h2>
                      <div class="Sale">{{dish.sale}}</div>
                  </div>
                 <div class="xiaoB">{{dish.matreial}}</div>

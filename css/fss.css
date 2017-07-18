@@ -57,6 +57,25 @@ input{
  text-align: center;
  line-height:40px;
 }
+.list-group {
+  margin: auto 8% auto 8%;
+}
+.media-body .xiaoB{
+  margin-top: 30px;
+  margin-bottom:15px;
+  border: 1px solid Green;
+  width:30%;
+  border-radius: 2px;
+  padding: 2px;
+  color: black;
+}
+.media-body .daB{
+  border: 1px solid Green;
+  width:70%;
+  border-radius: 2px;
+  padding: 2px;
+  color: black;
+}
 @media screen and (min-width:992px){
   #container .search{
     width:50%;
@@ -76,19 +95,68 @@ input{
 }
 /*3、屏幕尺寸 <= 767px*/
 @media screen and (max-width:767px){
+  #container{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   #container .search{
-    width:80%;
+    width:55%;
     margin:0px 0px 0px 6px;
-}
+    margin-top: 5px;
+  }
+  #container .button{
+    width:20%;
+  }
+
   .logo{display: none}
-  .button{display: none}
-  .list-group-item img{
-    width: 30%;
-    height: 30%;
+  .list-group {
+    margin: auto 2% auto 2%;
+  }
+  .list-group img{
+    width: 150px;
+    height: 150px;
+
+  }
+  input{
+    margin-top: 0px;
+  }
+
+  .list-group div #biaoti{
+    font-size:20px;
+    width:160px;
+    margin-top: 1px;
+  }
+  .media-body .xiaoB{
+    font-size:5px;
+    margin-top: 12px;
+    width: 80%;
+  }
+  .media-body .daB{
+    font-size:5px;
+    margin-top: 2px;
+    width:95%;
+  }
+  .list-group .pr .prs{
+    font-size:10px;
+    width: 75px;
+    margin-top: 2px;
+
+  }
+  .list-group .pr div{
+    font-size:16px;
+    margin-top: 20px;
+    margin-left: 8%;
+
+  }
+  .media-body .Sale{
+    font-size:5px;
+  }
+   .container-fluid{
+     height:10%;
+     font-size:1rem;
   }
 }
-
-
+/*响应式结束*/
 .list-group-item .mainContent{
   list-style: none;
   display: inline-block;
@@ -113,25 +181,11 @@ input{
 .media-body ul li{
   list-style: none;
 }
-.media-body .xiaoB{
-  margin-top: 30px;
-  margin-bottom:15px;
-  border: 1px solid Green;
-  width:30%;
-  border-radius: 2px;
-  padding: 2px;
-  color: black;
-}
-.media-body .daB{
-  border: 1px solid Green;
-  width:70%;
-  border-radius: 2px;
-  padding: 2px;
-  color: black;
-}
+
+
 .media-body .pr{
    float: right;
-   margin-top: 30px;
+
    margin-right: 10%;
    font-size: 35px;
    color: red;
@@ -211,9 +265,7 @@ nav .pagination{
 .panel{
   margin: auto 8% auto 8%;
 }
-.list-group {
-  margin: auto 8% auto 8%;
-}
+
 .list-1{
   margin: auto 8% auto 8%;
   margin-top: 10px;
