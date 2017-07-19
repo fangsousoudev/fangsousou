@@ -127,6 +127,9 @@ input{
   font-size: 15px;
   padding: 10px;
 }
+.list-2{
+  margin-top: 10px;
+}
 /*响应式*/
 @media screen and (min-width:992px){
   #container .search{
@@ -207,7 +210,7 @@ input{
      margin-left:0;
   }
   .media-body .yangshiD li{
-     font-size: 6px;
+     font-size: 13px;
      color: black;
      margin-top: 4px;
      margin-left:0;
@@ -252,8 +255,18 @@ input{
     width: 150px;
     height: 150px;
   }
+  #last {
+    padding: 5px;
+  }
   #last li{
-    font-size: 12px;
+    font-size: 15px;
+  }
+  #last1 {
+    margin-top: 0px;
+    padding: 5px;
+  }
+  #last1 li{
+    font-size: 15px;
   }
   .list-1 .btn-default{
     font-size: 12px;
@@ -334,8 +347,4 @@ nav .pagination{
 .navbar-toggle {
   margin-top: 4px;
   margin-bottom: 4px;
-}
-
-.list-2{
-  margin-top: 10px;
 }
