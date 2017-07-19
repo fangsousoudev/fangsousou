@@ -24,12 +24,10 @@ Controllers.controller('MainCtrl', ['$scope', 'DishList', function($scope, DishL
       // 获取房源列表
       DishList.getInfo(function (result) {
         $scope.dishList = result;
-      });
-
-    }
+      })
+    };
     _init();
 }]);
-
 
 //详细页面的controller
 Controllers.controller('DetailCtrl',['$scope','DishList','$routeParams',function ($scope,DishList, $routeParams) {
@@ -41,6 +39,5 @@ Controllers.controller('DetailCtrl',['$scope','DishList','$routeParams',function
     $(document).ready(function(){
     $('#carousel-example-generic').carousel({interval:2000});
     });
-
   _init();
 }]);
